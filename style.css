@@ -18,6 +18,7 @@
     position: absolute;
     left: 16px;
     line-height: 60px;
+    cursor: pointer;
 }
 
 .sidebar_menu{
@@ -33,7 +34,7 @@
     position: absolute;
     width: 100%;
     line-height: 60px;
-     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
 }
 
 .sidebar_menu .logo a{
@@ -45,13 +46,14 @@
     font-weight: 500;
 }
 
-.sidebar_menu .btn_two{
+.sidebar_menu .btn_two i{
     color: gray;
     font-size: 25px;
     line-height: 60px;
     position: absolute;
     left: 270px;
-    opacity: 0;
+    /* opacity: 0; */
+    cursor: pointer;
 }
 
 .sidebar_menu .menu{
@@ -65,6 +67,7 @@
     margin-top: 6px;
     padding: 14px 20px;
 }
+
 
 .sidebar_menu .menu i,a{
     color: white;
@@ -90,4 +93,21 @@
 
 #check{
    display: none; 
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); 
+}
+
+.btn_one i:hover{
+    font-size: 40px;
+}
+
+.btn_two i:hover{
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: calc(1.5);
 }
